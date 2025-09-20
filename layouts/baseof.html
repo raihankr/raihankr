@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {{ block "title" . }}
+        {{ .Site.Title }} | raihankr
+      {{ end }}
+    </title>
+  </head>
+  <body>
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    <footer>
+      {{ .Site.Copyright }}
+    </footer>
+  </body>
+</html>

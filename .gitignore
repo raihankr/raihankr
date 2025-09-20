@@ -2,3 +2,4 @@
 .env.build
 .vercel
 public
+node_modules

@@ -1,0 +1,31 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "article",
+      "aside",
+      "body",
+      "div",
+      "footer",
+      "h1",
+      "h4",
+      "h5",
+      "head",
+      "header",
+      "html",
+      "main",
+      "meta",
+      "script",
+      "section",
+      "span",
+      "title"
+    ],
+    "classes": [
+      "next",
+      "previous"
+    ],
+    "ids": [
+      "hugo-on-vercel"
+    ]
+  }
+}
