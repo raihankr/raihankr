@@ -1,4 +1,6 @@
 {
   "prettier.enable": true,
-  "prettier.formatterPriority": 1
+  "prettier.formatterPriority": 1,
+
+  "css.validate": false
 }
