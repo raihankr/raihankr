@@ -2,13 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ with (templates.Defer (dict "key" "global")) }}
+      {{ partial "css.html" . }}
+    {{ end }}
     <title>
       {{ block "title" . }}
         {{ .Site.Title }} | raihankr
       {{ end }}
     </title>
   </head>
-  <body>
+  <body class="mx-auto overflow-x-hidden">
+    <nav
+      class="fixed top-4 left-1/2 z-50 flex h-12 -translate-x-1/2 flex-row content-center items-center gap-4 rounded-2xl border-2 border-black bg-white px-4 shadow-solid"
+    >
+      <a href="/" class="text-lg leading-12 font-bold underline-offset-3">
+        <u>raihan</u>kr
+      </a>
+      <ul class="list-none">
+        <li><a href="/blog">blog</a></li>
+      </ul>
+    </nav>
     {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
     {{ end }}
