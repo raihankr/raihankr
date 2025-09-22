@@ -2,24 +2,15 @@
   "htmlElements": {
     "tags": [
       "a",
-      "article",
-      "aside",
       "body",
-      "div",
       "footer",
-      "h1",
-      "h4",
-      "h5",
       "head",
-      "header",
       "html",
       "li",
-      "main",
       "meta",
       "nav",
+      "p",
       "script",
-      "section",
-      "span",
       "title",
       "u",
       "ul"
@@ -41,9 +32,7 @@
       "left-1/2",
       "list-none",
       "mx-auto",
-      "next",
       "overflow-x-hidden",
-      "previous",
       "px-4",
       "rounded-2xl",
       "shadow-solid",
@@ -52,8 +41,6 @@
       "underline-offset-3",
       "z-50"
     ],
-    "ids": [
-      "hugo-on-vercel"
-    ]
+    "ids": null
   }
 }
