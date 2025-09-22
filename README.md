@@ -1,19 +1,6 @@
-# Hugo Example
+# Raihan Khairul Rochman
 
-This directory is a brief example of a [Hugo](https://gohugo.io/) app that can be deployed to Vercel with zero configuration.
+Hello, there! I'm a software developer and a computer-science-enthusiast. I like to write code, explore the internet, and learn new technologies. I have interest and few knowledges in various subjects of computer science. Software development, web development, mobile development, cyber security, quality assurance, system administration, machine learning, and possibly much more in the future! I might not master them all&mdash;perhaps a jack-of-all-trades, master of few. But, I like to learn new things everyday!
 
-## Deploy Your Own
-
-Deploy your own Hugo project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/hugo&template=hugo)
-
-_Live Example: https://hugo-template.vercel.app_
-
-### How We Created This Example
-
-To get started with Hugo for deployment with Vercel, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:
-
-```shell
-$ hugo new site project-name
-```
+**Website**&nbsp;: [raihankr.my.id](https://www.raihankr.my.id)  
+**Contact**&nbsp;: hello [at] raihankr [dot] my [dot] id
