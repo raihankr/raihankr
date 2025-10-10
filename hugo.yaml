@@ -1,4 +1,3 @@
-baseURL: https://blog.raihankr.my.id/
 languageCode: en-us
 title: Han's Blog
 copyright: © 2025 Raihan Khairul Rochman
@@ -20,18 +19,3 @@ minify:
   disableXML: false
   minifyOutput: true
 
-build:
-  buildStats:
-    enable: true
-  cachebusters:
-    - source: assets/notwatching/hugo_stats\.json
-      target: css
-    - source: (postcss|tailwind)\.config\.js
-      target: css
-module:
-  mounts:
-    - source: assets
-      target: assets
-    - disableWatch: true
-      source: hugo_stats.json
-      target: assets/notwatching/hugo_stats.json
