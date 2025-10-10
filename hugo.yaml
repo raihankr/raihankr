@@ -1,6 +1,8 @@
 languageCode: en-us
-title: Han's Blog
+title: raihankr
 copyright: © 2025 Raihan Khairul Rochman
+params:
+  author: Raihan Khairul Rochman
 
 permalinks:
   page:
@@ -18,4 +20,3 @@ minify:
   disableSVG: false
   disableXML: false
   minifyOutput: true
-

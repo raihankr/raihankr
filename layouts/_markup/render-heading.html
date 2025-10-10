@@ -1,0 +1,3 @@
+<h{{ .Level | add 1 }} id="{{ .Anchor }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
+  {{- .Text -}}
+</h{{ .Level | add 1 }}>

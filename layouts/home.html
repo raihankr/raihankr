@@ -1,12 +1,12 @@
 {{ define "main" }}
   <main>
+    <h1>{{ .Site.Params.author }}</h1>
     <header>
-      <h1>{{ .Site.Title }}</h1>
     </header>
     <div>
-      {{ range first 5 .Site.RegularPages }}
-        {{ .Render "summary" }}
-      {{ end }}
+      <!-- {{ range first 5 .Site.RegularPages }} -->
+      <!--   {{ .Render "summary" }} -->
+      <!-- {{ end }} -->
     </div>
   </main>
 {{ end }}

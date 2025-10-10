@@ -1,17 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
 
+:root {
+  --bg: white; /* background */
+  --fg: black; /* foreground */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  background-color: var(--bg);
 }
 
 body {
   overflow-x: hidden;
   margin: auto;
   max-width: 70ch;
+  color: var(--fg);
   font-family: Inter, sans-serif;
   padding: 3em 1em;
   font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Outfit, sans-serif;
+  font-weight: bold;
 }
 
 a {
@@ -36,8 +55,8 @@ nav {
   justify-content: center;
   gap: 16px;
   border-radius: 8px;
-  border: 2px solid black;
-  background: white;
+  border: 2px solid var(--fg);
+  background-color: var(--bg);
   font-family: Outfit;
   align-items: center;
 
@@ -52,5 +71,10 @@ nav {
 }
 
 .shadow-solid {
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 0 0 var(--fg);
+}
+
+.dark {
+  --bg: black;
+  --fg: white;
 }
