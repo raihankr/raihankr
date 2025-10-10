@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="dark">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,21 @@
     </title>
   </head>
   <body>
-    <nav class="shadow-solid">
-      <a href="/" class="logo"> <u>raihan</u>kr </a>
-      <ul>
-        <li><a href="/blog">blog</a></li>
-      </ul>
+    <nav>
+      <div class="box">
+        <a href="/" class="logo"> <b><u>raihan</u>kr</b> </a>
+        <ul>
+          <li><a href="/blog">blog</a></li>
+        </ul>
+      </div>
+      <button class="box" onclick="document.documentElement.classList.toggle('dark')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <g fill="none">
+            <path style="fill: var(--fg)" d="M2.75 12A9.25 9.25 0 0 0 12 21.25V2.75A9.25 9.25 0 0 0 2.75 12"/>
+            <path style="stroke: var(--fg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21.25a9.25 9.25 0 0 0 0-18.5m0 18.5a9.25 9.25 0 0 1 0-18.5m0 18.5V2.75"/>
+          </g>
+        </svg>
+      </button>
     </nav>
     {{ block "main" . }}
     {{ end }}
