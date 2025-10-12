@@ -14,7 +14,7 @@
 .dark {
   --bg: black;
   --fg: white;
-  --ac-1: greenyellow;
+  --ac-1: forestgreen;
 }
 
 /*--- BASE ---*/
@@ -71,7 +71,6 @@ nav {
   z-index: 50;
   height: 64px;
   translate: -50% 0;
-  background-color: var(--bg);
   font-family: Outfit;
   align-items: stretch;
 
@@ -103,17 +102,30 @@ nav {
   border-radius: 8px;
   border: 2px solid var(--fg);
   box-shadow: 4px 4px 0 0 var(--fg);
+  overflow: hidden;
+  position: relative;
 
   button& {
     transition:
       translate 0.2s,
-      box-shadow 0.2s,
-      background 1s;
-    background: radial-gradient(circle at center, var(--ac-1) 0, var(--bg) 20%);
+      box-shadow 0.2s;
 
     &:active {
       translate: 4px 4px;
       box-shadow: 0 0 0 0;
+    }
+
+    &::after {
+      content: "";
+      width: 125%;
+      height: 125%;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -10;
+      border-radius: 50%;
+      transition: scale 0.3s;
+      scale: 0;
     }
   }
 }
@@ -122,11 +134,9 @@ nav {
 
 /*--- HOVER ---*/
 @media (hover: hover) {
-  button.box:hover {
-    background: radial-gradient(
-      circle at center,
-      var(--ac-1) 50%,
-      var(--bg) 20%
-    );
+  button.box:hover::after {
+    position: absolute;
+    scale: 1;
+    background-color: var(--ac-1);
   }
 }
