@@ -33,11 +33,13 @@
   <body>
     <nav>
       <div class="elevated box">
-        <a href="/" class="logo">
-          <b><u>raihan</u>kr</b>
-        </a>
         <ul>
-          <li><a href="/blog">blog</a></li>
+          <a href="/" class="logo">
+            <b><u>raihan</u>kr</b>
+          </a>
+          {{- range .Site.Menus.main }}
+            <li><a href="{{ .PageRef }}">{{ .Name }}</a></li>
+          {{ end }}
         </ul>
       </div>
       <button class="elevated box" onclick="toggleTheme()">

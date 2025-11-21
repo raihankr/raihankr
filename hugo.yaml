@@ -4,6 +4,13 @@ copyright: © 2025 Raihan Khairul Rochman
 params:
   author: Raihan Khairul Rochman
 
+menus:
+  main:
+    - name: about
+      pageRef: /about
+    - name: blog
+      pageRef: /blog
+
 permalinks:
   page:
     posts: /posts/:slugorcontentbasename/

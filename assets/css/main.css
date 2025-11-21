@@ -25,6 +25,7 @@
   transition:
     background-color 1s,
     color 1s;
+  color: var(--fg);
 }
 
 html {
@@ -35,7 +36,6 @@ body {
   overflow-x: hidden;
   margin: auto;
   max-width: 70ch;
-  color: var(--fg);
   font-family: Inter, sans-serif;
   padding: 3em 1em;
   font-size: 1em;
@@ -93,13 +93,16 @@ nav {
     align-items: center;
   }
 
-  & > button {
-  }
-
   ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 16px;
   }
+}
+
+hr {
+  margin: 16px 0 8px;
 }
 
 /*--- COMPONENTS ---*/
@@ -147,5 +150,12 @@ nav {
     position: absolute;
     scale: 1;
     background-color: var(--ac-1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    scale: 1.25;
+    translate: -50% -25%;
   }
 }
