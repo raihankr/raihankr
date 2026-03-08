@@ -2,53 +2,53 @@
 title: How I Detected a Fake SD Card
 slug: how-i-detected-a-fake-sd-card-j1rxx
 url: /post/how-i-detected-a-fake-sd-card-j1rxx.html
-date: '2026-03-05 18:29:34+07:00'
-lastmod: '2026-03-08 16:52:53+07:00'
+date: '2026-03-05 20:29:34+07:00'
+lastmod: '2026-03-08 18:52:53+07:00'
 toc: true
 isCJKLanguage: true
 ---
 
 
 
-# How I Detected a Fake SD Card
+# How I Detected a ke SD Card
 
 # Origin Story
 
-　　The story begins around two years ago when I bought this 256 GB SD card from an online marketplace. Well, the price was cheap (I forgot how much exactly) and the rating was good (I think, otherwise I wouldn't bother buying it). Sure it looks weird that it was cheap yet has a big size but the reviews look promising enough.
+The story begins around two years ago when I bought this 256 GB SD card from an online marketplace. Well, the price was cheap (I forgot how much exactly) and the rating was good (I think, otherwise I wouldn't bother buying it). Sure it looks weird that it was cheap yet has a big size but the reviews look promising enough.
 
-　　A few days later, the thing arrived, and I couldn't hold myself to migrate all my data to the SD card already. My mistake was that I didn't do any backup in before migrating my data. I don't really remember how it got corrupted. But, I think, the moment I moved all my files from my old SD card to the new SD card simultaneously, I didn't check wether the files are safe or not. And I think, I must have did a cut instead of a copy because what I remember now is that I have lost all my files.
+A few days later, the thing arrived, and I couldn't hold myself to migrate all my data to the SD card already. My mistake was that I didn't do any backup in before migrating my data. I don't really remember how it got corrupted. But, I think, the moment I moved all my files from my old SD card to the new SD card simultaneously, I didn't check wether the files are safe or not. And I think, I must have did a cut instead of a copy because what I remember now is that I have lost all my files.
 
-　　Just after I've moved all things, I checked my stuff there. And as you guys may expect, it corrupted. Well, nothing else can I do. I don't sure if i'm able to do a recovery either. I kinda regret my action, but ... what now? Nothing but keep my lives going like before. They're just a bunch of 0s and 1s anyway (I miss them).
+Just after I've moved all things, I checked my stuff there. And as you guys may expect, it corrupted. Well, nothing else can I do. I don't sure if i'm able to do a recovery either. I kinda regret my action, but ... what now? Nothing but keep my lives going like before. They're just a bunch of 0s and 1s anyway (I miss them).
 
 ## Founding the Problem
 
-　　About last month that I found the corrupted SD card again. I almost completely forgot about what had happened to my data and that SD card. I was just a few steps away from repeating my mistakes. But, luckily, I didn't fall for the same trap, because I kept procrastinating it. Until ...
+About last month that I found the corrupted SD card again. I almost completely forgot about what had happened to my data and that SD card. I was just a few steps away from repeating my mistakes. But, luckily, I didn't fall for the same trap, because I kept procrastinating it. Until ...
 
-　　A few days ago, with my friend, I talked about SD cards and how they are almost always have smaller capacity than what they were advertised for—that's because the different in units used by the producer of the SD card and our machine. That was when I decided to gain further information about how SD cards store its data. And then I stumbled upon [this video](https://www.youtube.com/watch?v=4dtD8ZL4YNo).
+A few days ago, with my friend, I talked about SD cards and how they are almost always have smaller capacity than what they were advertised for—that's because the different in units used by the producer of the SD card and our machine. That was when I decided to gain further information about how SD cards store its data. And then I stumbled upon [this video](https://www.youtube.com/watch?v=4dtD8ZL4YNo).
 
-　　The author of the video experienced similar thing as what had happened to me. He got scammed after buying some cheap flash drives. He explained that scammers usually bought cheap flash drives, label it, and change the code to make it looks like the size were bigger. They then sell with with a slightly higher price to make it look more valuable than what it actually is. That part of the video had me suspicious with my 256 GB SD card.
+The author of the video experienced similar thing as what had happened to me. He got scammed after buying some cheap flash drives. He explained that scammers usually bought cheap flash drives, label it, and change the code to make it looks like the size were bigger. They then sell with with a slightly higher price to make it look more valuable than what it actually is. That part of the video had me suspicious with my 256 GB SD card.
 
 # Identifying Counterfeit
 
-　　As I'm being suspicious, I searched on the internet for a way to tell wether an SD card is a scam or not. That's when I found this tool called f3. The name stands for Fight Flash Fraud or Fight Fake Flash. 
+As I'm being suspicious, I searched on the internet for a way to tell wether an SD card is a scam or not. That's when I found this tool called f3. The name stands for Fight Flash Fraud or Fight Fake Flash. 
 
 ## Tools
 
-　　This what you gonna need to detect a fake SD card:
+This what you gonna need to detect a fake SD card:
 
 - An SD card adapter;
 - A Linux or macOS PC/laptop (if you're looking for a Windows alternative, try [H2TestW](https://h2testw.org/)*); and,
 - The f3 package**.
 
-　　\* Unfortunately I can't provide a specific guide for it since I'm not using Windows majorly anymore, but their landing page should tells enough of how to use the software
+\* Unfortunately I can't provide a specific guide for it since I'm not using Windows majorly anymore, but their landing page should tells enough of how to use the software
 
-　　** Install from your distribution package manager or follow[ this guide](https://fight-flash-fraud.readthedocs.io/en/latest/introduction.html#installation).
+** Install from your distribution package manager or follow[ this guide](https://fight-flash-fraud.readthedocs.io/en/latest/introduction.html#installation).
 
-　　‍
+‍
 
 ## F3 Write/Read Method
 
-　　There are two methods that we can use to detect a fake SD card. The first method is using f3write and f3read
+There are two methods that we can use to detect a fake SD card. The first method is using f3write and f3read
 
 ```shell
 $ sudo f3write /media/han/7955-BC54
